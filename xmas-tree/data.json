@@ -1,0 +1,19 @@
+{
+  "title": "Chúc mừng Giáng sinh 2025 ❤️",
+  "message": "Cây thông này anh làm riêng tặng em nè ❤️\nYêu em nhiều lắm luôn á!\nNoel vui vẻ bên nhau nha vợ iu!",
+  "sender": "Chồng iu của em",
+  "music": "merry-christmas",
+  "snow": true,
+  "fireworks": true,
+  "ornaments": [
+    { "text": "2025", "color": "#ff0000" },
+    { "text": "Yêu em", "color": "#ff1493" },
+    { "text": "Mãi mãi", "color": "#ffd700" },
+    { "text": "Vợ iu", "color": "#ff69b4" },
+    { "text": "Ông xã", "color": "#00ffff" },
+    { "text": "Noel vui", "color": "#00ff00" },
+    { "text": "Bình an", "color": "#ffffff" },
+    { "text": "Hạnh phúc", "color": "#ffa500" },
+    { "text": "Em là nhất", "color": "#ff69b4" }
+  ]
+}
