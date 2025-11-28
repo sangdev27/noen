@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html class="">
     <head>
+        <style>
+            body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+        </style>   
         <meta charset="utf-8">
         <title>Harumi Gifts Box – Quà tặng cá nhân hóa</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,17 +31,19 @@
         </script>
         <link rel="icon" href="https://harumigiftsbox.com/app-logo.jpg" type="image/x-icon">
         <style>
-            html {
-                background-color: oklch(1 0 0);
-            }
 
-            html.dark {
-                background-color: oklch(0.145 0 0);
-            }
+        html {
+            background-color: oklch(1 0 0);
+        }
+
+        html.dark {
+            background-color: oklch(0.145 0 0);
+        }
+    
         </style>
-        <title inertia>HarumiGiftsBox</title>
+        <title inertia="">Harumi Gifts Box</title>
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet"/>
+        <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet">
         <script type="text/javascript">
             const Ziggy = {
                 "url": "https:\/\/harumigiftsbox.com",
@@ -1475,80 +1481,332 @@
                 }
             });
         </script>
-        <link rel="preload" as="style" href="./build/assets/app-DV6pxBOu.css"/>
-        <link rel="preload" as="style" href="./build/assets/ChistmasText-Dw7l6DFC.css"/>
-        <link rel="preload" as="style" href="./build/assets/FlipperCard-BFAqkA4e.css"/>
-        <link rel="modulepreload" href="./build/assets/app-CWVuyR8b.js"/>
-        <link rel="modulepreload" href="./build/assets/Index-DQu87FU3.js"/>
-        <link rel="modulepreload" href="./build/assets/react-three-fiber.esm-DlHPGXYr.js"/>
-        <link rel="modulepreload" href="./build/assets/index-D3ml-sAb.js"/>
-        <link rel="modulepreload" href="./build/assets/background-stars-CufnPe8a.js"/>
-        <link rel="modulepreload" href="./build/assets/ChristmasTree3D-DGDSSlYG.js"/>
-        <link rel="modulepreload" href="./build/assets/fireworks-C495ggEb.js"/>
-        <link rel="modulepreload" href="./build/assets/ChistmasText-CwhnZgGq.js"/>
-        <link rel="modulepreload" href="./build/assets/OpenSSLDecryptionService-xlYgbWpP.js"/>
-        <link rel="modulepreload" href="./build/assets/flipper-card-ChPpbWCX.js"/>
-        <link rel="modulepreload" href="./build/assets/Environment-DhJCSHg6.js"/>
-        <link rel="modulepreload" href="./build/assets/events-dc44c1b8.esm-Dn7KqyVj.js"/>
-        <link rel="modulepreload" href="./build/assets/three.module-uFtjsCt7.js"/>
-        <link rel="modulepreload" href=".//build/assets/extends-DPdBf6DS.js"/>
-        <link rel="modulepreload" href="./build/assets/ground-rings-C48g9UJN.js"/>
-        <link rel="modulepreload" href="./build/assets/Html-BKZbDdq-.js"/>
-        <link rel="stylesheet" href="./build/assets/app-DV6pxBOu.css"/>
-        <link rel="stylesheet" href="./build/assets/ChistmasText-Dw7l6DFC.css"/>
-        <link rel="stylesheet" href="./build/assets/FlipperCard-BFAqkA4e.css"/>
-        <script type="module" src="./build/assets/app-CWVuyR8b.js"></script>
-        <script type="module" src="./build/assets/Index-DQu87Fu3.js"></script>
-    </head>
-<body class="font-sans antialiased">
-  <div id="app" 
-  data-page='{
-    "component": "views/xmas-tree/Index",
-    "props": {
-      "errors": {},
-      "name": "HarumiGiftsBox",
-      "quote": {
-        "message": "Waste no more time arguing what a good man should be, be one.",
-        "author": "Marcus Aurelius"
-      },
-      "auth": {
-        "user": null
-      },
-      "ziggy": {
-        "url": "https://harumigiftsbox.com",
-        "port": null,
-        "defaults": [],
-        "routes": {
-          "home": { "uri": "/", "methods": ["GET", "HEAD"] },
-          "xmas-tree.show": { 
-            "uri": "xmas-tree/{id}", 
-            "methods": ["GET", "HEAD"], 
-            "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" },
-            "parameters": ["id"]
-          },
-          "xmas-tree-result": { 
-            "uri": "xmas-tree-result/{id}", 
-            "methods": ["GET", "HEAD"], 
-            "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" },
-            "parameters": ["id"]
-          },
-          "storage.local": { 
-            "uri": "storage/{path}", 
-            "methods": ["GET", "HEAD"], 
-            "wheres": { "path": ".*" }, 
-            "parameters": ["path"] 
-          },
-          "login": { "uri": "login", "methods": ["GET", "HEAD"] },
-          "logout": { "uri": "logout", "methods": ["POST"] }
-        },
-        "location": "https://harumigiftsbox.com/xmas-tree/623bceba-945f-4cf8-b331-b9d922c8db11"
-      },
-      "url": "/xmas-tree/623bceba-945f-4cf8-b331-b9d922c8db11",
-      "version": "ae141ba5526ced472323468933562980",
-      "clearHistory": true,
-      "encryptHistory": false,
-      "encryptedData": null
+ <link rel="preload" as="style" href="https://harumigiftsbox.com/build/assets/app-DV6pxBOu.css">
+ <link rel="preload" as="style" href="https://harumigiftsbox.com/build/assets/ChistmasText-Dw7l6DFC.css">
+ <link rel="preload" as="style" href="https://harumigiftsbox.com/build/assets/FlipperCard-BFAqkA4e.css">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/app-CWVuyR8b.js">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/Index-DQu87FU3.js">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/react-three-fiber.esm-DlHPGXYr.js">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/index-D3ml-sAb.js">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/background-stars-CufnPe8a.js">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/ChristmasTree3D-DGDSSlYG.js">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/fireworks-C495ggEb.js">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/ChistmasText-CwhnZgGq.js">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/OpenSSLDecryptionService-xlYgbWpP.js">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/flipper-card-ChPpbWCX.js">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/Environment-DhJCSHg6.js">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/events-dc44c1b8.esm-Dn7KqyVj.js">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/three.module-uFtjsCt7.js">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/extends-DPdBf6DS.js">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/ground-rings-C48g9UJN.js">
+ <link rel="modulepreload" href="https://harumigiftsbox.com/build/assets/Html-BKZbDdq-.js">
+ <link rel="stylesheet" href="https://harumigiftsbox.com/build/assets/app-DV6pxBOu.css">
+ <link rel="stylesheet" href="https://harumigiftsbox.com/build/assets/ChistmasText-Dw7l6DFC.css">
+ <link rel="stylesheet" href="https://harumigiftsbox.com/build/assets/FlipperCard-BFAqkA4e.css">
+ <script type="module" src="https://harumigiftsbox.com/build/assets/app-CWVuyR8b.js">
+
+ </script>
+ <script type="module" src="https://harumigiftsbox.com/build/assets/Index-DQu87FU3.js">
+ </script>    <link rel="modulepreload" as="script" crossorigin="" href="/build/assets/Index-DQu87FU3.js">
+ <link rel="modulepreload" as="script" crossorigin="" href="/build/assets/react-three-fiber.esm-DlHPGXYr.js">
+ <link rel="modulepreload" as="script" crossorigin="" href="/build/assets/events-dc44c1b8.esm-Dn7KqyVj.js">
+ <link rel="modulepreload" as="script" crossorigin="" href="/build/assets/three.module-uFtjsCt7.js">
+ <link rel="modulepreload" as="script" crossorigin="" href="/build/assets/index-D3ml-sAb.js">
+ <link rel="modulepreload" as="script" crossorigin="" href="/build/assets/extends-DPdBf6DS.js">
+ <link rel="modulepreload" as="script" crossorigin="" href="/build/assets/background-stars-CufnPe8a.js">
+ <link rel="modulepreload" as="script" crossorigin="" href="/build/assets/ChristmasTree3D-DGDSSlYG.js">
+ <link rel="modulepreload" as="script" crossorigin="" href="/build/assets/ground-rings-C48g9UJN.js">
+ <link rel="modulepreload" as="script" crossorigin="" href="/build/assets/fireworks-C495ggEb.js">
+ <link rel="modulepreload" as="script" crossorigin="" href="/build/assets/ChistmasText-CwhnZgGq.js">
+ <link rel="modulepreload" as="script" crossorigin="" href="/build/assets/Html-BKZbDdq-.js">
+ <link rel="stylesheet" crossorigin="" href="/build/assets/ChistmasText-Dw7l6DFC.css">
+ <link rel="modulepreload" as="script" crossorigin="" href="/build/assets/OpenSSLDecryptionService-xlYgbWpP.js">
+ <link rel="modulepreload" as="script" crossorigin="" href="/build/assets/flipper-card-ChPpbWCX.js">
+ <link rel="stylesheet" crossorigin="" href="/build/assets/FlipperCard-BFAqkA4e.css">
+ <link rel="modulepreload" as="script" crossorigin="" href="/build/assets/Environment-DhJCSHg6.js">
+ <style>
+      #nprogress {
+      pointer-events: none;
     }
-  }'></div>
+
+    #nprogress .bar {
+      background: #4B5563;
+
+      position: fixed;
+      z-index: 1031;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 2px;
+    }
+
+    #nprogress .peg {
+      display: block;
+      position: absolute;
+      right: 0px;
+      width: 100px;
+      height: 100%;
+      box-shadow: 0 0 10px #4B5563, 0 0 5px #4B5563;
+      opacity: 1.0;
+
+      transform: rotate(3deg) translate(0px, -4px);
+    }
+
+    #nprogress .spinner {
+      display: block;
+      position: fixed;
+      z-index: 1031;
+      top: 15px;
+      right: 15px;
+    }
+
+    #nprogress .spinner-icon {
+      width: 18px;
+      height: 18px;
+      box-sizing: border-box;
+
+      border: solid 2px transparent;
+      border-top-color: #4B5563;
+      border-left-color: #4B5563;
+      border-radius: 50%;
+
+      animation: nprogress-spinner 400ms linear infinite;
+    }
+
+    .nprogress-custom-parent {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .nprogress-custom-parent #nprogress .spinner,
+    .nprogress-custom-parent #nprogress .bar {
+      position: absolute;
+    }
+
+    @keyframes nprogress-spinner {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+ </style>
+    </head>
+
+<body class="font-sans antialiased">
+    <div 
+        id="app" 
+        data-page='{
+            "component": "views/xmas-tree/Index",
+            "props": {
+                "errors": {},
+                "name": "HarumiGiftsBox",
+                "quote": {
+                    "message": "Do what you can, with what you have, where you are.",
+                    "author": "Theodore Roosevelt"
+                },
+                "auth": { "user": null },
+                "ziggy": {
+                    "url": "https://harumigiftsbox.com",
+                    "port": null,
+                    "defaults": [],
+                    "routes": {
+                        "about": { "uri": "about", "methods": ["GET", "HEAD"] },
+                        "info": { "uri": "info", "methods": ["GET", "HEAD"] },
+                        "shipping-policy": { "uri": "shipping-policy", "methods": ["GET", "HEAD"] },
+                        "return-policy": { "uri": "return-policy", "methods": ["GET", "HEAD"] },
+                        "payment-policy": { "uri": "payment-policy", "methods": ["GET", "HEAD"] },
+                        "privacy-policy": { "uri": "privacy-policy", "methods": ["GET", "HEAD"] },
+                        "show-create-form": { "uri": "create-message/{id?}", "methods": ["GET", "HEAD"], "parameters": ["id"] },
+                        "edit-client-form": { "uri": "create-message/edit/{id?}", "methods": ["GET", "HEAD"], "parameters": ["id"] },
+                        "message-result": { "uri": "message-result/{id?}", "methods": ["GET", "HEAD"], "parameters": ["id"] },
+                        "create-form": { "uri": "create-message", "methods": ["POST"] },
+                        "update-form": { "uri": "update-message", "methods": ["POST"] },
+                        "show-countdown-form": { "uri": "countdown-message/{id?}", "methods": ["GET", "HEAD"], "parameters": ["id"] },
+                        "edit-countdown-form": { "uri": "countdown-message/edit/{id?}", "methods": ["GET", "HEAD"], "parameters": ["id"] },
+                        "countdown-result": { "uri": "countdown-result/{id?}", "methods": ["GET", "HEAD"], "parameters": ["id"] },
+                        "countdown-form": { "uri": "coutdown-message", "methods": ["POST"] },
+                        "update-countdown-form": { "uri": "countdown-message/update", "methods": ["POST"] },
+                        "home": { "uri": "/", "methods": ["GET", "HEAD"] },
+                        "product.show": { "uri": "products/{id}", "methods": ["GET", "HEAD"], "parameters": ["id"] },
+                        "product-detail": { "uri": "product-detail/{id}", "methods": ["GET", "HEAD"], "parameters": ["id"] },
+                        "music-search": { "uri": "music-search", "methods": ["GET", "HEAD"] },
+                        "memories-menu": { "uri": "memories/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "logout": { "uri": "logout", "methods": ["POST"] },
+                        "memories-form": { "uri": "memories-form", "methods": ["GET", "HEAD"] },
+                        "memories-form-save": { "uri": "memories-form/save", "methods": ["POST"] },
+                        "edit-memories-form": { "uri": "memories-form/edit/{id?}", "methods": ["GET", "HEAD"], "parameters": ["id"] },
+                        "show-create-memories-result": { "uri": "create-memories-result/{id?}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "payment.create": { "uri": "payment/create", "methods": ["GET", "HEAD"] },
+                        "vnpay.return": { "uri": "vnpay-return", "methods": ["GET", "HEAD"] },
+                        "vnpay.ipn": { "uri": "IPN", "methods": ["GET", "HEAD"] },
+                        "login.google": { "uri": "login-google", "methods": ["GET", "HEAD"] },
+                        "payment.success": { "uri": "payment-success", "methods": ["GET", "HEAD"] },
+                        "payment.error": { "uri": "payment-error", "methods": ["GET", "HEAD"] },
+                        "payment.fail": { "uri": "payment-fail", "methods": ["GET", "HEAD"] },
+                        "payment.verify": { "uri": "payment/verify-code", "methods": ["GET", "HEAD"] },
+                        "countdown-list": { "uri": "admin/countdown-list", "methods": ["GET", "HEAD"] },
+                        "countdown-search": { "uri": "admin/countdown-filter", "methods": ["GET", "HEAD"] },
+                        "client-list": { "uri": "admin/client-list", "methods": ["GET", "HEAD"] },
+                        "client-search": { "uri": "admin/client-filter", "methods": ["GET", "HEAD"] },
+                        "memories-list": { "uri": "admin/memories-list", "methods": ["GET", "HEAD"] },
+                        "memories-filter": { "uri": "admin/memories-filter", "methods": ["GET", "HEAD"] },
+                        "product-list": { "uri": "admin/product-list", "methods": ["GET", "HEAD"] },
+                        "product-update": { "uri": "admin/products/update", "methods": ["POST"] },
+                        "product-update-order": { "uri": "admin/products/update-order", "methods": ["POST"] },
+                        "letter-list": { "uri": "admin/letter-list", "methods": ["GET", "HEAD"] },
+                        "letter-filter": { "uri": "admin/letter-filter", "methods": ["GET", "HEAD"] },
+                        "love-day-list": { "uri": "admin/love-day-list", "methods": ["GET", "HEAD"] },
+                        "love-day-filter": { "uri": "admin/love-day-filter", "methods": ["GET", "HEAD"] },
+                        "souvenir-showroom-list": { "uri": "admin/souvenir-showroom-list", "methods": ["GET", "HEAD"] },
+                        "souvenir-showroom-filter": { "uri": "admin/souvenir-showroom-filter", "methods": ["GET", "HEAD"] },
+                        "caro-list": { "uri": "admin/caro-list", "methods": ["GET", "HEAD"] },
+                        "caro-filter": { "uri": "admin/caro-list-filter", "methods": ["GET", "HEAD"] },
+                        "puzzle-list": { "uri": "admin/puzzle-list", "methods": ["GET", "HEAD"] },
+                        "puzzle-filter": { "uri": "admin/puzzle-list-filter", "methods": ["GET", "HEAD"] },
+                        "love-calendar-list": { "uri": "admin/love-calendar-list", "methods": ["GET", "HEAD"] },
+                        "love-calendar-filter": { "uri": "admin/love-calendar-list-filter", "methods": ["GET", "HEAD"] },
+                        "heart-list": { "uri": "admin/heart-list", "methods": ["GET", "HEAD"] },
+                        "heart-filter": { "uri": "admin/heart-filter", "methods": ["GET", "HEAD"] },
+                        "mother-letter-list": { "uri": "admin/mother-letter-list", "methods": ["GET", "HEAD"] },
+                        "mother-letter-filter": { "uri": "admin/mother-letter-filter", "methods": ["GET", "HEAD"] },
+                        "xmas-tree-list": { "uri": "admin/xmas-tree-list", "methods": ["GET", "HEAD"] },
+                        "xmas-tree-filter": { "uri": "admin/xmas-tree-filter", "methods": ["GET", "HEAD"] },
+                        "chrismas-tree-list": { "uri": "admin/chrismas-tree-list", "methods": ["GET", "HEAD"] },
+                        "chrismas-tree-filter": { "uri": "admin/chrismas-tree-filter", "methods": ["GET", "HEAD"] },
+                        "payment-list": { "uri": "admin/payment-list", "methods": ["GET", "HEAD"] },
+                        "payment-filter": { "uri": "admin/payment-list-filter", "methods": ["GET", "HEAD"] },
+                        "music-list": { "uri": "admin/music-list", "methods": ["GET", "HEAD"] },
+                        "music-filter": { "uri": "admin/music-list-filter", "methods": ["GET", "HEAD"] },
+                        "create-music": { "uri": "admin/create-music", "methods": ["POST"] },
+                        "update-music": { "uri": "admin/update-music", "methods": ["POST"] },
+                        "product-filter": { "uri": "admin/product-filter", "methods": ["GET", "HEAD"] },
+                        "updateRecentColor": { "uri": "update-color", "methods": ["POST"] },
+                        "getRecentColors": { "uri": "get-recent-colors", "methods": ["GET", "HEAD"] },
+                        "letter-form": { "uri": "create-letter", "methods": ["GET", "HEAD"] },
+                        "letter-form-save": { "uri": "letter-form/save", "methods": ["POST"] },
+                        "edit-letter-form": { "uri": "letter-form/edit/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "letter-result": { "uri": "letter-result/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "love-day-form": { "uri": "create-love-day", "methods": ["GET", "HEAD"] },
+                        "love-day-form-save": { "uri": "love-day-form/save", "methods": ["POST"] },
+                        "edit-love-day-form": { "uri": "love-day-form/edit/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "love-day-result": { "uri": "love-day-result/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "souvenir-showroom-form": { "uri": "create-souvenir-showroom", "methods": ["GET", "HEAD"] },
+                        "souvenir-showroom-form-save": { "uri": "souvenir-showroom-form/save", "methods": ["POST"] },
+                        "edit-souvenir-showroom-form": { "uri": "souvenir-showroom-form/edit/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "souvenir-showroom-result": { "uri": "souvenir-showroom-result/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "caro-form": { "uri": "create-caro", "methods": ["GET", "HEAD"] },
+                        "caro-form-save": { "uri": "caro-form/save", "methods": ["POST"] },
+                        "edit-caro-form": { "uri": "caro-form/edit/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "caro-result": { "uri": "caro-result/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "puzzle-form": { "uri": "create-puzzle", "methods": ["GET", "HEAD"] },
+                        "puzzle-form-save": { "uri": "puzzle-form/save", "methods": ["POST"] },
+                        "edit-puzzle-form": { "uri": "puzzle-form/edit/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "puzzle-result": { "uri": "puzzle-result/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "love-calendar-form": { "uri": "create-love-calendar", "methods": ["GET", "HEAD"] },
+                        "love-calendar-form-save": { "uri": "love-calendar-form/save", "methods": ["POST"] },
+                        "edit-love-calendar-form": { "uri": "love-calendar-form/edit/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "love-calendar-result": { "uri": "love-calendar-result/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "heart-form": { "uri": "create-heart", "methods": ["GET", "HEAD"] },
+                        "heart-form-save": { "uri": "heart-form/save", "methods": ["POST"] },
+                        "edit-heart-form": { "uri": "heart/edit/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "heart-result": { "uri": "heart-result/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "mother-letter-form": { "uri": "create-mother-letter", "methods": ["GET", "HEAD"] },
+                        "mother-letter-form-save": { "uri": "mother-letter-form/save", "methods": ["POST"] },
+                        "edit-mother-letter-form": { "uri": "mother-letter/edit/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "mother-letter-result": { "uri": "mother-letter-result/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "xmas-tree-form": { "uri": "create-xmas-tree", "methods": ["GET", "HEAD"] },
+                        "xmas-tree-form-save": { "uri": "xmas-tree-form/save", "methods": ["POST"] },
+                        "edit-xmas-tree-form": { "uri": "xmas-tree/edit/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "xmas-tree-result": { "uri": "xmas-tree-result/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "chrismas-tree-form": { "uri": "create-chrismas-tree", "methods": ["GET", "HEAD"] },
+                        "chrismas-tree-form-save": { "uri": "chrismas-tree-form/save", "methods": ["POST"] },
+                        "edit-chrismas-tree-form": { "uri": "chrismas-tree/edit/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "chrismas-tree-result": { "uri": "chrismas-tree-result/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "letter.show": { "uri": "letter/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "love.day.show": { "uri": "love-day/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "souvenir.showroom.show": { "uri": "caro/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "puzzle.show": { "uri": "puzzle/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "love.calendar.show": { "uri": "love-calendar/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "heart.show": { "uri": "heart/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "mother-letter.show": { "uri": "mother-letter/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "xmas-tree.show": { "uri": "xmas-tree/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "chrismas-tree.show": { "uri": "chrismas-tree/{id}", "methods": ["GET", "HEAD"], "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" }, "parameters": ["id"] },
+                        "test": { "uri": "test", "methods": ["GET", "HEAD"] },
+                        "register": { "uri": "register", "methods": ["GET", "HEAD"] },
+                        "login": { "uri": "login", "methods": ["GET", "HEAD"] },
+                        "password.request": { "uri": "forgot-password", "methods": ["GET", "HEAD"] },
+                        "password.email": { "uri": "forgot-password", "methods": ["POST"] },
+                        "password.reset": { "uri": "reset-password/{token}", "methods": ["GET", "HEAD"], "parameters": ["token"] },
+                        "password.store": { "uri": "reset-password", "methods": ["POST"] },
+                        "storage.local": { "uri": "storage/{path}", "methods": ["GET", "HEAD"], "wheres": { "path": ".*" }, "parameters": ["path"] }
+                    },
+                    "location": "https://harumigiftsbox.com/xmas-tree/623bceba-945f-4cf8-b331-b9d922c8db11"
+                },
+                "encryptedData": "UDRg0/ABZwUYckoXQuHNw8zoEbG2glUk97qJcBC1CHMbqwF33C/9lWRSwTYeixp0wVhTGMsnaY34QRIcSyP4jsxrUNTqIPqY5XmXg2We2ccDyis3S7wYBfsmhbddwKk+4vpTCoWkF1jIXzNc9MQjnK8omLkFExb7+91DACr7plxjMTvN8uLrfaSvOdFmuu5fx9DpMfL/JNe0UYyNV2RANE+tdP6I7HtYFFTkfdwzAZMoYj6CXaau5m0CjQWKIlyxTnHIr9hSP80TdN6XRrtThMjnEsgmuGjjmPIA7uvjix+DJzsTMB6GK4q7yL7kBLb3Fapx6fKuc0vuyapKvnjZLV+4AG+AxdvvD+KaI44bGvA3SC76tBIrWs4/ezeWS2yIEA/1BBtSC2UNgyoqMSYW9yiTS6uNNw1Pi4yKu4ApqVewHYroAJNBem96knIUqCbF7RH0feQYNY9c2lYJTg9GQBskGMDuJv5hdAKjJ8KGI6EuLRr7jjEiQOTcB0i3g7P224FEAL7TtHUZKZeE8QUOb4Aak8YZqD4D8+6UvvKHJBZXMkiDSquE0az5HPmA+j4WgsmK7ZHymh75JPJUIMQNZkCOYKroBRUSYaTE0Orzlr6ZP4f1ncnCSqzY4ZN7HoBqnvmLBtmle9NO9hkV7imrEX+LD+k/oYPLVnwuimQyhPTztjPW8uGkVJNKLOg+hv/g2pjTwCivNu20WppcFiu9Skaxe11NIuFvLJWCGcMBU9nzGoCKxv2V6/zfHCK6PW0K/6nspgBftpwP+sycb9ShXX0cYPY2qR3bdKIVyZEehZ24fU9r59NkH5f8SH2Xn1VUN99qfGVCMHW8PoyrXO3ehBqcnwv3hF8hfibwn8ypj1bAQG6p1vXqiyE+UrdPk05diN71J+jkVYla0DLGdr5b6aaxJq8ePcnXJPHQX/sRLiW99zNjNeDripecvLZ5nWCTtMRVrmsBPiLR3e/NC5DiKfQ5EeqRI3mEyG6UuZkkIiRbVRE6pNE18WysY9Hu3abQUT2ZXqSoJih6j6Mts4AGyeDzRnaJFSMlpjsGVmmFbdI/2iZnKJBo2+pzltphe2tJzlNjiW6bdik/TvI78I3Vhwmob6taxMFSdNtxIu2iD52gI/vrzJdiYwd6uCIs95pA44dXFtLXZXsZ+UH1MyQ7LfB5nYkdo6TMU9qgjGD+ik23xdq2rYbbXmITM0zP/OS10qn/G4F8EibM5YI7tqSEh8Lff474rnoKszdOFGsSYLCgMVHwd9sO/ZMfQ+894ClRQcuX6RWFPnRVSYTu0YDuQafn49VUf0O0npQv9lWysiE1XPuuZd/OR4II17IPHYSgzw0c0jhj/nQIuQRsmuKrHPI0qjz+ELT5ZwBsZm4f4JCHE9Ya9tj7rnzvVxw5xMsp196+iB6wMtPzHJLtdxpt8NGUZQo273lXCi1O7A6dnl1iBf48zbDLfiJlN0u++LdCOMBm/OHSguB5ecTf5Yv8s8Z1/2GunPQA2AmqMpHN9v8ytTy5tO02TpN84bw/L7Lzdg1kUvUN7KLyurWNds58fvaGJidLEeYEOvGQpJihuwbxrGIah00L6EoHJO+Dpq425oDS3h1dJOCEG6m+B6hCMk2DXlpLqrdQj2+BGKchU1E=",
+                "url": "/xmas-tree/623bceba-945f-4cf8-b331-b9d922c8db11",
+                "version": "ae141ba5526ced472323468933562980",
+                "clearHistory": false,
+                "encryptHistory": false
+            }
+        }'>
+
+        <!-- Background Giáng sinh -->
+        <div class="relative bg-black _container-christmas-tree_1ia6f_3" 
+             style="background-color: #000; position: fixed; inset: 0; margin: 0; padding: 0; width: 100vw; height: 100vh;">
+            
+            <div class="min-h-screen" 
+                 style="background-image: url('/images/xmas/xmas-bg.jpg');
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        font-family: 'SVN-ComicSansMS', sans-serif;">
+
+                <div class="relative flex min-h-[90vh] w-full items-center justify-center px-2 text-gray-900 sm:px-4">
+                    <div class="mx-auto flex items-center justify-center">
+                        
+                        <label for="check" class="absolute cursor-pointer">
+                            <div class="fly-in absolute rounded-lg flex items-center justify-center bg-white transition-transform duration-700 ease-in-out 
+                                        h-[280px] w-[180px] md:ml-1 
+                                        lg:h-[500px] lg:w-[300px] 
+                                        -translate-y-30 lg:-translate-y-50 
+                                        rotate-[-5deg] translate-x-0 
+                                        hover:shadow-lg cursor-pointer">
+
+                                <div class="perspective relative h-full w-full">
+                                    <!-- Mặt trước thiệp -->
+                                    <div class="tile out rounded-lg openingLeft leftOpen" 
+                                         style="left: 0; z-index: 2; overflow: hidden; background-color: #ac100e; border: none;">
+                                        <img class="scale-175" src="/images/xmas/xmas-cover.jpg" alt="Bìa thiệp Giáng sinh" 
+                                             style="object-fit: cover; object-position: center;">
+                                    </div>
+
+                                    <!-- Mặt trong bên trái -->
+                                    <div class="tile rounded-lg in-left left-0 openingLeft leftOpen" style="z-index: 3;">
+                                        <div class="inner-content">
+                                            <img src="/images/xmas/xmas-inner.jpg" alt="Bên trong thiệp">
+                                        </div>
+                                    </div>
+
+                                    <!-- Nội dung lời chúc -->
+                                    <div class="tile in-bottom rounded-lg">
+                                        <div class="flex h-full w-full flex-col p-2 leading-relaxed lg:px-4 lg:py-8 text-md lg:text-xl justify-between text-left">
+                                            <p class="m-0 leading-[1.5] flex-1" 
+                                               style="overflow-wrap: break-word; overflow-y: auto;">
+                                                Anh chúc em một mùa Giáng Sinh dịu dàng như chính em vậy 🍬✨. 
+                                                Cảm ơn em vì đã bước vào cuộc sống của anh bằng nụ cười và sự trong trẻo khiến anh không thể nào quên. 
+                                                Anh mong mỗi ngày trôi qua, em đều cảm nhận được rằng em xứng đáng với những điều đẹp nhất. 
+                                                Và anh hy vọng mình sẽ luôn là người đồng hành, nâng niu và yêu em theo cách em xứng đáng 💗.
+                                            </p>
+                                            <button class="border-0 cursor-pointer mt-4">Click me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
