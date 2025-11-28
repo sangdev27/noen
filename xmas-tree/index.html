@@ -1500,30 +1500,55 @@
         <script type="module" src="./build/assets/app-CWVuyR8b.js"></script>
         <script type="module" src="./build/assets/Index-DQu87Fu3.js"></script>
     </head>
-    
-    
-    <script>
-  // BẮT BUỘC HIỂN THỊ CÂY THÔNG NGAY – BỎ QUA MÃ HOÁ
-  document.getElementById('app').setAttribute('data-page', JSON.stringify({
-    component: "views/xmas-tree/Index",
-    props: { errors: {}, name: "HarumiGiftsBox", auth: { user: null }, data: {
-      title: "Giáng sinh 2025 thật hạnh phúc ❤️",
-      message: "Anh làm cây thông này chỉ dành riêng cho em thôi nè\nYêu em nhiều lắm luôn á ❤️\nMãi bên nhau nha vợ iu!",
-      sender: "Chồng iu của em",
-      music: "merry-christmas",
-      snow: true,
-      fireworks: true,
-      ornaments: [
-        {"text":"2025","color":"#ff0000"},
-        {"text":"Yêu em","color":"#ff1493"},
-        {"text":"Mãi mãi","color":"#ffd700"},
-        {"text":"Vợ iu","color":"#ff69b4"},
-        {"text":"Ông xã","color":"#00ffff"},
-        {"text":"Hạnh phúc","color":"#00ff00"},
-        {"text":"Bình an","color":"#ffffff"},
-        {"text":"Noel vui","color":"#ffa500"}
-      ]
-    }}
-  }));
-</script>
+<body class="font-sans antialiased">
+  <div id="app" 
+  data-page='{
+    "component": "views/xmas-tree/Index",
+    "props": {
+      "errors": {},
+      "name": "HarumiGiftsBox",
+      "quote": {
+        "message": "Waste no more time arguing what a good man should be, be one.",
+        "author": "Marcus Aurelius"
+      },
+      "auth": {
+        "user": null
+      },
+      "ziggy": {
+        "url": "https://harumigiftsbox.com",
+        "port": null,
+        "defaults": [],
+        "routes": {
+          "home": { "uri": "/", "methods": ["GET", "HEAD"] },
+          "xmas-tree.show": { 
+            "uri": "xmas-tree/{id}", 
+            "methods": ["GET", "HEAD"], 
+            "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" },
+            "parameters": ["id"]
+          },
+          "xmas-tree-result": { 
+            "uri": "xmas-tree-result/{id}", 
+            "methods": ["GET", "HEAD"], 
+            "wheres": { "id": "[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}" },
+            "parameters": ["id"]
+          },
+          "storage.local": { 
+            "uri": "storage/{path}", 
+            "methods": ["GET", "HEAD"], 
+            "wheres": { "path": ".*" }, 
+            "parameters": ["path"] 
+          },
+          "login": { "uri": "login", "methods": ["GET", "HEAD"] },
+          "logout": { "uri": "logout", "methods": ["POST"] }
+        },
+        "location": "https://harumigiftsbox.com/xmas-tree/623bceba-945f-4cf8-b331-b9d922c8db11"
+      },
+      "url": "/xmas-tree/623bceba-945f-4cf8-b331-b9d922c8db11",
+      "version": "ae141ba5526ced472323468933562980",
+      "clearHistory": true,
+      "encryptHistory": false,
+      "encryptedData": null
+    }
+  }'></div>
+</body>
 </html>
